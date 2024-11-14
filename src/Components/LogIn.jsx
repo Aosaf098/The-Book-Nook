@@ -6,14 +6,14 @@ const LogIn = ({ handleSignUpActive }) => {
   return (
     <>
       <form className="w-full flex flex-col items-center gap-10">
-        <h1 className="font-sora text-4xl">Log In</h1>
+        <h1 className="font-sora text-3xl lg:text-4xl">Log In</h1>
         <Input
-          className="w-3/5 font-sora font-bold"
+          className="w-[90%] lg:w-3/5 font-sora font-bold"
           type="email"
           placeholder="Email"
         />
         <Input
-          className="w-3/5 font-sora font-bold"
+          className="w-[90%] lg:w-3/5 font-sora font-bold"
           type="password"
           placeholder="Password"
         />

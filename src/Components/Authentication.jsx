@@ -33,10 +33,10 @@ const Authentication = () => {
 
   return (
     <>
-      <div className="w-full h-dvh flex justify-between">
-        <div className="w-[60%] h-full flex flex-col gap-4 items-center justify-center py-10">
-          <h1 className="font-edu text-7xl text-center">The Book Nook</h1>
-          <div className="w-full flex justify-center gap-32 my-10">
+      <div className="w-full h-dvh lg:flex lg:justify-between">
+        <div className="lg:w-[60%] h-full flex flex-col gap-4 items-center justify-center py-10 ">
+          <h1 className="font-edu text-5xl lg:text-7xl text-center">The Book Nook</h1>
+          <div className="w-full flex justify-center gap-6 lg:gap-32 my-10">
             <Button
               onClick={handleSignInActive}
               variant="secondary"
@@ -56,10 +56,10 @@ const Authentication = () => {
               Sign Up
             </Button>
           </div>
-          <div className={`w-1/2 bg-gray-100 rounded-2xl p-10 ${signUpActive && 'hidden'}`}>
+          <div className={`lg:w-1/2 bg-gray-100 rounded-2xl p-4 lg:p-10 ${signUpActive && 'hidden'}`}>
             {signInActive && <LogIn handleSignUpActive={handleSignUpActive} />}
           </div>
-          <div className={`w-1/2 bg-gray-100 rounded-2xl p-10 ${signInActive && 'hidden'}`}>{signUpActive && <Register handleSignInActive={handleSignInActive} />}</div>
+          <div className={`lg:w-1/2 bg-gray-100 rounded-2xl p-10 ${signInActive && 'hidden'}`}>{signUpActive && <Register handleSignInActive={handleSignInActive} />}</div>
           OR
           <hr className="w-1/2 border-black" />
           <div className="flex items-center flex-col gap-3">
@@ -84,7 +84,7 @@ const Authentication = () => {
             </div>
           </div>
         </div>
-        <div className="w-[40%] h-full object-contain">
+        <div className="w-[40%] h-full object-contain hidden lg:block">
           <img
             className="w-full object-cover h-full filter brightness-125"
             src={AuthImg}
