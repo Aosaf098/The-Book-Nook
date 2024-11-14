@@ -109,7 +109,7 @@ const Register = ({ handleSignInActive }) => {
             type={eyeOpen ? 'text' : 'password'}
             placeholder="Password"
           />
-          <button onClick={passwordEye} className="absolute right-[120px] top-[78px]">
+          <button onClick={passwordEye} className="absolute lg:right-[120px] lg:top-[78px] right-8 top-[76px]">
             {
                 eyeOpen ? <FiEye size={18}/> : <FiEyeOff size={18} />
             }

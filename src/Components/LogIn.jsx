@@ -48,7 +48,7 @@ const LogIn = ({ handleSignUpActive }) => {
     <>
       <form
         onSubmit={handleLogin}
-        className="w-full flex flex-col items-center gap-10 relative"
+        className="w-full flex flex-col items-center gap-10 relative lg:py-0 py-2"
       >
         <h1 className="font-sora text-3xl lg:text-4xl">Log In</h1>
         <div className="w-full flex flex-col items-center gap-8 relative">
@@ -66,12 +66,12 @@ const LogIn = ({ handleSignUpActive }) => {
           />
           <button
             onClick={passwordEye}
-            className="absolute right-[120px] top-[78px]"
+            className="absolute lg:right-[120px] right-8 top-[76px] lg:top-[78px]"
           >
             {eyeOpen ? <FiEye size={18} /> : <FiEyeOff size={18} />}
           </button>
         </div>
-        <div className="absolute top-[190px] left-[100px]">
+        <div className="absolute top-[190px] lg:left-[100px] left-4">
             <a href="#" className="text-[12px]">Forget Passowrd?</a>
         </div>
         <div className="flex items-center space-x-2 mt-4">
