@@ -72,7 +72,7 @@ const LogIn = ({ handleSignUpActive }) => {
           </button>
         </div>
         <div className="absolute top-[190px] lg:left-[100px] left-4">
-            <a href="#" className="text-[12px]">Forget Passowrd?</a>
+            <a href="#" className="text-[12px] font-sora">Forget Passowrd?</a>
         </div>
         <div className="flex items-center space-x-2 mt-4">
           <Checkbox id="terms" name="terms" />
